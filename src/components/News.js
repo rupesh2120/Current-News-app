@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import NewsItem from "./NewsItem";
 import Spinner from "./Spinner";
 import PropTypes from "prop-types";
+import { API_KEY } from "../config/env";
 
 export class News extends Component {
 	static defaultProps = {
@@ -33,7 +34,7 @@ export class News extends Component {
 	}
 
 	async updateNews() {
-		const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=e53a146f5622479c83119be6bfde7e88&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+		const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${API_KEY}&page=${this.state.page}&pageSize=${this.props.pageSize}`;
 		this.setState({ loading: true });
 		let data = await fetch(url);
 		let parseData = await data.json();
@@ -45,7 +46,7 @@ export class News extends Component {
 	}
 
 	async componentDidMount() {
-		let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=e53a146f5622479c83119be6bfde7e88&page=1&pageSize=${this.props.pageSize}`;
+		let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${API_KEY}&page=1&pageSize=${this.props.pageSize}`;
 		this.setState({ loading: true });
 		let data = await fetch(url);
 		let parseData = await data.json();
