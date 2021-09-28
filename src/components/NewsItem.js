@@ -7,7 +7,7 @@ export class NewsItem extends Component {
 		return (
 			<div className="my-3">
 				<div className="card">
-					<img
+					{/* <img
 						src={
 							imageUrl
 								? imageUrl
@@ -15,14 +15,13 @@ export class NewsItem extends Component {
 						}
 						className="card-img-top"
 						alt="..."
-					/>
+					/> */}
 					<div className="card-body">
 						<h5 className="card-title">{title}...</h5>
-						<p className="card-text">{description}...</p>
+						<p className="card-text">Click on below link to read more</p>
 						<p className="card-text">
 							<small className="text-muted">
-								By {author ? author : "Unknow"} on{" "}
-								{new Date(date).toGMTString()}
+								Author {author ? author : "Unknow"}
 							</small>
 						</p>
 						<a
