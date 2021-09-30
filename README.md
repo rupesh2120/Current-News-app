@@ -14,6 +14,20 @@ It is a simple react.js app. I have used news api to implement this app. The new
 
 When we run this app, it will first hit the api which has general topic. This is because we have written the fetch method in the componentDidMount() function. So whenever our app will load, componentDidMount() will also load. I have provided different topics on navbar and when we select the topic, we will get the news based on the topic.
 
+### Here is the video of project.
+
+
+
+https://user-images.githubusercontent.com/36697896/135421469-d1ae7f66-3a39-48ba-a3d0-965a953173f1.mp4
+
+
+
+### Download the project
+
+Download the project on your local machine.
+Just do npm i inside the newsapp folder. This will install all
+the required dependencies.
+
 ### `npm start`
 
 Runs the app in the development mode.\
