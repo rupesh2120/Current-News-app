@@ -24,7 +24,7 @@ https://user-images.githubusercontent.com/36697896/135421469-d1ae7f66-3a39-48ba-
 
 ### Download the project
 
-Download the project on your local machine.
+Download and clone the project on your local machine.
 Just do npm i inside the newsapp folder. This will install all
 the required dependencies.
 
